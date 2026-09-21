@@ -3,4 +3,4 @@ count=107
 mp4_size=3189824
 mp4_md5=b2b4a579f9c4183f3c1e10fd65f997d4
 status=complete
-note=ignore any chunks/*.w files; assemble only p000-p106
+note=assemble only p000-p106; ignore *.w and s*/_* test files
