@@ -37,3 +37,24 @@ open AIRUNS-wenshu-promo-v2.mp4
 清单：https://raw.githubusercontent.com/tllrhry/airuns-wenshu-promo-v2/main/chunks/MANIFEST.txt
 
 仓库：https://github.com/tllrhry/airuns-wenshu-promo-v2
+
+## Download & assemble (Mac)
+
+Pieces: `chunks/p000` … `chunks/p106` (107 files). Ignore any `*.w` leftovers.
+
+```bash
+cd ~/Downloads && mkdir -p airuns-promo && cd airuns-promo
+for i in $(seq -f '%03g' 0 106); do
+  curl -fsSL -o "p$i" "https://raw.githubusercontent.com/tllrhry/airuns-wenshu-promo-v2/main/chunks/p$i"
+done
+cat $(seq -f 'p%03g' 0 106) > all.b64
+base64 -D -i all.b64 -o AIRUNS-wenshu-promo-v2.mp4
+ls -lh AIRUNS-wenshu-promo-v2.mp4
+md5 -q AIRUNS-wenshu-promo-v2.mp4   # expect b2b4a579f9c4183f3c1e10fd65f997d4
+open AIRUNS-wenshu-promo-v2.mp4
+```
+
+Expected size: **3189824** bytes.
+
+Local copy (preferred if Grok Bot is connected):  
+`~/projects/nanjingyinhang/skilltohtml/exports/AIRUNS-wenshu-promo-v2.mp4`
