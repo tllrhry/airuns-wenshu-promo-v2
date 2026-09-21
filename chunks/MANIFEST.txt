@@ -1,0 +1,8 @@
+# AIRUNS wenshu promo v2 base64 pieces
+md5=b2b4a579f9c4183f3c1e10fd65f997d4
+size=3189824
+piece_size_max=40000
+piece_count=107
+naming=chunks/p000 .. chunks/p106
+status=upload_in_progress
+---
